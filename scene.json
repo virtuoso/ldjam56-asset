@@ -1,0 +1,93 @@
+{
+    "name": "test level",
+    "model": [
+        {
+            "name": "terrain",
+            "gltf": "grey_box3.gltf",
+            "terrain_clamp": false,
+            "physics": {
+                "mass": 2.0,
+                "geom": "trimesh",
+                "type": "geom"
+            },
+            "entity": [
+    	    	[0.0, 0.0, 0.0, 1]
+	        ]
+        }, {
+            "name": "god",
+            "gltf": "char_player_god_animated5.2.gltf",
+            "terrain_clamp": true,
+            "physics": {
+                "mass": 2.0,
+                "geom": "capsule",
+                "yoffset": 10,
+                "radius": 0,
+                "length": 2
+            },
+            "animations": {
+                "motion_start": "IDLE_TO_WALK",
+                "motion_stop": "WALK_TO_IDLE2",
+                "motion": "WALK",
+                "idle":   "IDLE_STILL"
+            },
+            "character": [
+                [11.0, 10.0, 11.0, 1]
+	        ]
+        }, {
+            "name": "medium",
+            "gltf": "char_player_medium_animated8.1.gltf",
+            "terrain_clamp": true,
+            "physics": {
+                "mass": 2.0,
+                "geom": "capsule",
+                "yoffset": 0,
+                "radius": 0,
+                "length": 0
+            },
+            "animations": {
+                "motion_start": "IDLE_TO_RUN",
+                "motion_stop": "RUN_TO_STOP",
+                "motion": "RUN",
+                "idle":   "IDLE_STILL"
+            },
+            "speed": 1.5,
+            "character": [
+                [11.0, 10.0, 12.0, 100]
+	        ]
+        }, {
+            "name": "tiny",
+            "gltf": "char_player_tiny_stick1.0.gltf",
+            "terrain_clamp": true,
+            "physics": {
+                "mass": 2.0,
+                "geom": "capsule",
+                "yoffset": 0,
+                "radius": 0,
+                "length": 0
+            },
+            "animations": {
+                "motion_start": "IDLE_STILL_BREATHING",
+                "motion_stop": "IDLE_KICK_GROUND",
+                "motion": "RUN",
+                "idle":   "IDLE_STILL"
+            },
+            "speed": 1.5,
+            "character": [
+                [11.0, 10.0, 13.0, 1]
+	        ]
+        }, {
+            "name": "red tree",
+            "gltf": "grey_box_tree_red1.gltf",
+            "terrain_clamp": true,
+            "physics": {
+                "geom": "capsule",
+                "type": "geom",
+                "radius": 0.4,
+                "yoffset": 0
+            },
+            "entity": [
+                [ 0, 0, 0, 1 ]
+            ]
+        }
+    ]
+}
