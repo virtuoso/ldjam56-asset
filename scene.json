@@ -1,5 +1,14 @@
 {
     "name": "test level",
+    "light": [
+        {
+            "position": [ 100, 500, 0 ],
+            "color": [ 0.4, 0.4, 0.8 ]
+        }, {
+            "position": [ -100, 500, 0 ],
+            "color": [ 0.4, 0.4, 0.4 ]
+        }
+    ],
     "model": [
         {
             "name": "terrain",
@@ -11,7 +20,41 @@
                 "type": "geom"
             },
             "entity": [
-    	    	[0.0, 0.0, 0.0, 1]
+    	    	{
+                    "position": [0.0, 0.0, 0.0, 1, 90]
+                }
+	        ]
+        }, {
+            "name": "puzzle",
+            "gltf": "tiny_puzzle1.0.gltf",
+            "terrain_clamp": false,
+            "physics": {
+                "mass": 2.0,
+                "geom": "trimesh",
+                "type": "geom"
+            },
+            "entity": [
+    	    	{
+                    "position": [0.0, 0.0, 60.0, 1]
+                }
+	        ]
+        }, {
+            "name": "volcano",
+            "gltf": "volcano1.0.gltf",
+            "terrain_clamp": false,
+            "entity": [
+    	    	{
+                    "position": [60.0, 0.0, 0.0, 1]
+                }
+	        ]
+        }, {
+            "name": "ocean",
+            "gltf": "ocean.gltf",
+            "terrain_clamp": false,
+            "entity": [
+    	    	{
+                    "position": [0.0, 0.0, 0.0, 50]
+                }
 	        ]
         }, {
             "name": "god",
@@ -28,15 +71,21 @@
                 "motion_start": "IDLE_TO_WALK",
                 "motion_stop": "WALK_TO_IDLE2",
                 "motion": "WALK",
-                "idle":   "IDLE_STILL"
+                "idle":   "IDLE_STILL",
+                "start": "SIT",
+                "start_to_idle": "SIT_TO_IDLE"
             },
+            "speed": 4,
             "character": [
-                [11.0, 10.0, 11.0, 1]
+                {
+                    "position": [11.0, 10.0, 11.0, 1, 180]
+                }
 	        ]
         }, {
             "name": "medium",
-            "gltf": "char_player_medium_animated8.1.gltf",
+            "gltf": "char_player_medium_animated8.2.gltf",
             "terrain_clamp": true,
+            "jump": true,
             "physics": {
                 "mass": 2.0,
                 "geom": "capsule",
@@ -48,32 +97,20 @@
                 "motion_start": "IDLE_TO_RUN",
                 "motion_stop": "RUN_TO_STOP",
                 "motion": "RUN",
-                "idle":   "IDLE_STILL"
+                "idle":   "IDLE_STILL",
+                "start": "START",
+                "start_to_idle": "START_TO_IDLE"
             },
-            "speed": 1.5,
+            "speed": 4,
             "character": [
-                [11.0, 10.0, 12.0, 100]
-	        ]
-        }, {
-            "name": "tiny",
-            "gltf": "char_player_tiny_stick1.0.gltf",
-            "terrain_clamp": true,
-            "physics": {
-                "mass": 2.0,
-                "geom": "capsule",
-                "yoffset": 0,
-                "radius": 0,
-                "length": 0
-            },
-            "animations": {
-                "motion_start": "IDLE_STILL_BREATHING",
-                "motion_stop": "IDLE_KICK_GROUND",
-                "motion": "RUN",
-                "idle":   "IDLE_STILL"
-            },
-            "speed": 1.5,
-            "character": [
-                [11.0, 10.0, 13.0, 1]
+                {
+                    "position": [11.0, 10.0, 14.0, 100, 90],
+                    "light_color": [ 0.2, 0.0, 0.0 ],
+                    "light_offset": [ 0.0, 3.0, 0.0 ]
+                },
+                {
+                    "position": [ 12, 10, 10, 150, 45]
+                }
 	        ]
         }, {
             "name": "red tree",
@@ -86,7 +123,9 @@
                 "yoffset": 0
             },
             "entity": [
-                [ 0, 0, 0, 1 ]
+                {
+                    "position": [ 0, 0, 0, 1 ]
+                }
             ]
         }
     ]
