@@ -1,9 +1,18 @@
 {
     "name": "test level",
+    "light": [
+        {
+            "position": [ 100, 500, 0 ],
+            "color": [ 1.0, 1, 1 ]
+        }, {
+            "position": [ -100, 500, 0 ],
+            "color": [ 1, 0.9, 0.9 ]
+        }
+    ],
     "model": [
         {
             "name": "terrain",
-            "gltf": "grey_box3.gltf",
+            "gltf": "terrain1.0.gltf",
             "terrain_clamp": false,
             "physics": {
                 "mass": 2.0,
@@ -11,11 +20,251 @@
                 "type": "geom"
             },
             "entity": [
-    	    	[0.0, 0.0, 0.0, 1]
+    	    	{
+                    "position": [0.0, 0.0, 0.0, 1, 90]
+                }
+	        ]
+        }, {
+            "name": "lava at start location",
+            "gltf": "lava_start.gltf",
+            "terrain_clamp": false,
+            "physics": {
+                "mass": 2.0,
+                "geom": "trimesh",
+                "type": "geom"
+            },
+            "entity": [
+    	    	{
+                    "position": [0.0, 0.0, 0.0, 1]
+                }
+	        ]
+        },  {
+            "name": "puzzle 1",
+            "gltf": "tiny_puzzle2.0.gltf",
+            "terrain_clamp": false,
+            "physics": {
+                "mass": 2.0,
+                "geom": "trimesh",
+                "type": "geom"
+            },
+            "entity": [
+    	    	{
+                    "position": [0.0, 0.0, 0.0, 1]
+                }
+	        ]
+        }, {
+            "name": "boulder puzzle 1",
+            "gltf": "detail_boulder_tiny_puzzle.gltf",
+            "terrain_clamp": false,
+            "physics": {
+                "mass": 2.0,
+                "geom": "trimesh",
+                "type": "geom"
+            },
+            "entity": [
+    	    	{
+                    "position": [0.0, 0.0, 0.0, 1]
+                }
+	        ]
+        }, {
+            "name": "copper platers puzzle 1",
+            "gltf": "detail_copper.gltf",
+            "terrain_clamp": false,
+            "physics": {
+                "mass": 2.0,
+                "geom": "trimesh",
+                "type": "geom"
+            },
+            "entity": [
+    	    	{
+                    "position": [0.0, 0.0, 0.0, 1]
+                }
+	        ]
+        },  {
+            "name": "puzzle 2",
+            "gltf": "medium_puzzle2.0.gltf",
+            "terrain_clamp": false,
+            "physics": {
+                "mass": 2.0,
+                "geom": "trimesh",
+                "type": "geom"
+            },
+            "entity": [
+    	    	{
+                    "position": [0.0, 0.0, 0.0, 1]
+                }
+	        ]
+        }, {
+            "name": "boulders at gate",
+            "gltf": "boulders_at_gate.gltf",
+            "terrain_clamp": false,
+            "physics": {
+                "mass": 2.0,
+                "geom": "trimesh",
+                "type": "geom"
+            },
+            "entity": [
+    	    	{
+                    "position": [0.0, 0.0, 0.0, 1]
+                }
+	        ]
+        }, { 
+            "name": "temple walls white",
+            "gltf": "temple_walls.gltf",
+            "terrain_clamp": false,
+            "physics": {
+                "mass": 2.0,
+                "geom": "trimesh",
+                "type": "geom"
+            },
+            "entity": [
+    	    	{
+                    "position": [0.0, 0.0, 0.0, 1]
+                }
+	        ]
+        }, { 
+            "name": "basalt walls",
+            "gltf": "basalt_walls.gltf",
+            "terrain_clamp": false,
+            "physics": {
+                "mass": 2.0,
+                "geom": "trimesh",
+                "type": "geom"
+            },
+            "entity": [
+    	    	{
+                    "position": [0.0, 0.0, 0.0, 1]
+                }
+	        ]
+        }, {
+            "name": "volcano",
+            "gltf": "volcano1.0.gltf",
+            "terrain_clamp": false,
+            "entity": [
+    	    	{
+                    "position": [60.0, 0.0, 0.0, 1]
+                }
+	        ]
+        }, {
+            "name": "chair for smaller god",
+            "gltf": "chair_god.gltf",
+            "terrain_clamp": false,
+            "physics": {
+                "mass": 2.0,
+                "geom": "trimesh",
+                "type": "geom"
+            },
+            "entity": [
+    	    	{
+                    "position": [0.0, 0.0, 0.0, 1]
+                }
+	        ]
+        }, {
+            "name": "red trees",
+            "gltf": "red_trees1.gltf",
+            "terrain_clamp": false,
+            "physics": {
+                "mass": 2.0,
+                "geom": "trimesh",
+                "type": "geom"
+            },
+            "entity": [
+    	    	{
+                    "position": [0.0, 0.0, 0.0, 1]
+                }
+	        ]
+        }, {
+            "name": "red trees",
+            "gltf": "red_trees2.gltf",
+            "terrain_clamp": false,
+            "physics": {
+                "mass": 2.0,
+                "geom": "trimesh",
+                "type": "geom"
+            },
+            "entity": [
+    	    	{
+                    "position": [0.0, 0.0, 0.0, 1]
+                }
+	        ]
+        }, {
+            "name": "red trees",
+            "gltf": "red_trees3.gltf",
+            "terrain_clamp": false,
+            "physics": {
+                "mass": 2.0,
+                "geom": "trimesh",
+                "type": "geom"
+            },
+            "entity": [
+    	    	{
+                    "position": [0.0, 0.0, 0.0, 1]
+                }
+	        ]
+        }, {
+            "name": "ocean",
+            "gltf": "ocean.gltf",
+            "terrain_clamp": false,
+            "entity": [
+    	    	{
+                    "position": [0.0, 0.0, 0.0, 50]
+                }
+	        ]
+        }, {
+            "name": "medium",
+            "gltf": "char_player_medium_animated8.1.gltf",
+            "terrain_clamp": true,
+            "jump": true,
+            "physics": {
+                "mass": 2.0,
+                "geom": "capsule",
+                "yoffset": 0,
+                "radius": 0,
+                "length": 0
+            },
+            "animations": {
+                "motion_start": "IDLE_TO_RUN",
+                "motion_stop": "RUN_TO_STOP",
+                "motion": "RUN",
+                "idle":   "IDLE_STILL",
+                "start": "START",
+                "start_to_idle": "START_TO_IDLE"
+            },
+            "speed": 5,
+            "character": [
+                {
+                    "position": [ 0, 0, 0, 150, 0]
+                }
+	        ]
+        }, {
+            "name": "burned",
+            "gltf": "char_player_medium_animated9.0.gltf",
+            "terrain_clamp": true,
+            "jump": true,
+            "physics": {
+                "mass": 2.0,
+                "geom": "capsule",
+                "yoffset": 0,
+                "radius": 0,
+                "length": 0
+            },
+            "animations": {
+                "motion_start": "IDLE_TO_RUN",
+                "motion_stop": "RUN_TO_STOP",
+                "motion": "RUN",
+                "idle":   "IDLE_STILL",
+                "start": "START",
+                "start_to_idle": "START_TO_IDLE"
+            },
+            "speed": 5,
+            "character": [
+                {
+                    "position": [ 20, 0, 0, 150, 0]
+                }
 	        ]
         }, {
             "name": "god",
-            "gltf": "char_player_god_animated5.2.gltf",
+            "gltf": "char_player_god_animated6.0.gltf",
             "terrain_clamp": true,
             "physics": {
                 "mass": 2.0,
@@ -28,66 +277,16 @@
                 "motion_start": "IDLE_TO_WALK",
                 "motion_stop": "WALK_TO_IDLE2",
                 "motion": "WALK",
-                "idle":   "IDLE_STILL"
+                "idle":   "IDLE_STILL",
+                "start": "SIT",
+                "start_to_idle": "SIT_TO_IDLE"
             },
+            "speed": 4,
             "character": [
-                [11.0, 10.0, 11.0, 1]
+                {
+                    "position": [15, 0, -15, 1, 90]
+                }
 	        ]
-        }, {
-            "name": "medium",
-            "gltf": "char_player_medium_animated8.1.gltf",
-            "terrain_clamp": true,
-            "physics": {
-                "mass": 2.0,
-                "geom": "capsule",
-                "yoffset": 0,
-                "radius": 0,
-                "length": 0
-            },
-            "animations": {
-                "motion_start": "IDLE_TO_RUN",
-                "motion_stop": "RUN_TO_STOP",
-                "motion": "RUN",
-                "idle":   "IDLE_STILL"
-            },
-            "speed": 1.5,
-            "character": [
-                [11.0, 10.0, 12.0, 100]
-	        ]
-        }, {
-            "name": "tiny",
-            "gltf": "char_player_tiny_stick1.0.gltf",
-            "terrain_clamp": true,
-            "physics": {
-                "mass": 2.0,
-                "geom": "capsule",
-                "yoffset": 0,
-                "radius": 0,
-                "length": 0
-            },
-            "animations": {
-                "motion_start": "IDLE_STILL_BREATHING",
-                "motion_stop": "IDLE_KICK_GROUND",
-                "motion": "RUN",
-                "idle":   "IDLE_STILL"
-            },
-            "speed": 1.5,
-            "character": [
-                [11.0, 10.0, 13.0, 1]
-	        ]
-        }, {
-            "name": "red tree",
-            "gltf": "grey_box_tree_red1.gltf",
-            "terrain_clamp": true,
-            "physics": {
-                "geom": "capsule",
-                "type": "geom",
-                "radius": 0.4,
-                "yoffset": 0
-            },
-            "entity": [
-                [ 0, 0, 0, 1 ]
-            ]
         }
     ]
 }
