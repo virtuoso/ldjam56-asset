@@ -105,8 +105,9 @@
             "character": [
                 {
                     "position": [11.0, 10.0, 14.0, 100, 90],
-                    "light_color": [ 0.2, 0.0, 0.0 ],
-                    "light_offset": [ 0.0, 3.0, 0.0 ]
+                    "light_color": [ 0.8, 0.8, 1.0 ],
+                    "light_offset": [ 0.0, 2.0, 0.0 ],
+                    "light_attenuation": [ 1.0, 0.01, 0.002 ]
                 },
                 {
                     "position": [ 12, 10, 10, 150, 45]
