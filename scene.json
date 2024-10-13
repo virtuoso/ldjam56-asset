@@ -288,6 +288,26 @@
                     "position": [15, 0, -15, 1, 0]
                 }
 	        ]
+        }, {
+            "name": "gem",
+            "gltf": "glowing_gem_test.gltf",
+            "terrain_clamp": false,
+            "entity": [
+                {
+                    "position": [ 0.18, 2, -3, 1 ],
+                    "light_color": [ 1, 0, 0 ],
+                    "light_attenuation": [ 1, 0.01, 0.002 ]
+                }
+            ]
+        }, {
+            "name": "lava with emission",
+            "gltf": "lava1.0.1.gltf",
+            "terrain_clamp": true,
+            "entity": [
+                {
+                    "position": [ 0.18, 10, -6.36, 1 ]
+                }
+            ]
         }
     ]
 }
