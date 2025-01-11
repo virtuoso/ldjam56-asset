@@ -40,7 +40,7 @@
 	        ]
         },  {
             "name": "puzzle 1",
-            "gltf": "tiny_puzzle2.0.gltf",
+            "gltf": "tiny_puzzle2.0.glb",
             "terrain_clamp": false,
             "physics": {
                 "mass": 2.0,
