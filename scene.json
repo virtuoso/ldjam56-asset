@@ -306,7 +306,7 @@
             "name": "medium",
             "gltf": "char_player_medium_animated8.1.gltf",
             "terrain_clamp": true,
-            "jump": true,
+            "can_jump": true,
             "physics": {
                 "mass": 2,
                 "geom": "capsule",
@@ -324,7 +324,7 @@
                 "start_to_idle": "START_TO_IDLE"
             },
             "speed": 5,
-            "can_sprint": true,
+            "can_dash": true,
             "character": [
                 {
                     "position": [
@@ -341,7 +341,7 @@
             "name": "burned",
             "gltf": "char_player_medium_animated9.0.gltf",
             "terrain_clamp": true,
-            "jump": true,
+            "can_jump": true,
             "physics": {
                 "mass": 2,
                 "geom": "capsule",
