@@ -211,6 +211,7 @@
             "name": "volcano",
             "gltf": "volcano1.0.gltf",
             "terrain_clamp": false,
+            "outline_exclude": true,
             "entity": [
                 {
                     "position": [
