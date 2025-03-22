@@ -26,6 +26,10 @@
             ]
         }
     ],
+    "sfx": {
+        "footstep_left": "footstep-left.ogg",
+        "footstep_right": "footstep-right.ogg"
+    },
     "model": [
         {
             "name": "terrain",
@@ -56,6 +60,10 @@
                 "geom": "trimesh",
                 "type": "geom"
             },
+            "sfx": {
+                "footstep_left": "footstep-clay-left.ogg",
+                "footstep_right": "footstep-clay-right.ogg"
+            },
             "entity": [
                 {
                     "position": [
@@ -75,6 +83,10 @@
                 "mass": 2,
                 "geom": "trimesh",
                 "type": "geom"
+            },
+            "sfx": {
+                "footstep_left": "footstep-clay-left.ogg",
+                "footstep_right": "footstep-clay-right.ogg"
             },
             "entity": [
                 {
@@ -155,6 +167,10 @@
                 "mass": 2,
                 "geom": "trimesh",
                 "type": "geom"
+            },
+            "sfx": {
+                "footstep_left": "footstep-clay-left.ogg",
+                "footstep_right": "footstep-clay-right.ogg"
             },
             "entity": [
                 {
