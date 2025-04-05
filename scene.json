@@ -321,7 +321,7 @@
         },
         {
             "name": "medium",
-            "gltf": "char_player_medium_animated8.1.gltf",
+            "gltf": "char_medium1.3.glb",
             "terrain_clamp": true,
             "can_jump": true,
             "physics": {
@@ -332,13 +332,21 @@
                 "radius": 0,
                 "length": 0
             },
+            "motion_segments": 4,
             "animations": {
-                "motion_start": "IDLE_TO_RUN",
-                "motion_stop": "RUN_TO_STOP",
-                "motion": "RUN",
+                "motion_start": "IDLE_STILL_TO_RUN_R",
+                "motion_stop": "RUN_R_TO_IDLE_STILL",
+                "motion": "RUN_R",
+                "motion_to_jump": "RUN_R_TO_JUMP",
+                "jump": "JUMP_R",
+                "jump_to_motion": "JUMP_R_TO_RUN_R",
+                "jump_to_idle": "JUMP_R_TO_IDLE_STILL",
+                "fall_to_idle": "FALL_TO_IDLE_STILL",
+                "idle_to_jump": "IDLE_STILL_TO_JUMP_R",
                 "idle": "IDLE_STILL",
-                "start": "START",
-                "start_to_idle": "START_TO_IDLE"
+                "fall": "FALL",
+                "start": "KNEEL_START",
+                "start_to_idle": "KNEEL_TO_IDLE_STILL"
             },
             "speed": 5,
             "can_dash": true,
@@ -348,7 +356,7 @@
                         0,
                         10,
                         0,
-                        150,
+                        1,
                         0
                     ]
                 }
