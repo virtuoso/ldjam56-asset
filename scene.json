@@ -80,6 +80,7 @@
             "name": "puzzle 1",
             "gltf": "tiny_puzzle2.0.glb",
             "terrain_clamp": false,
+	    "fix_origin": true,
             "physics": {
                 "mass": 2,
                 "geom": "trimesh",
@@ -92,9 +93,9 @@
             "entity": [
                 {
                     "position": [
-                        0,
-                        0,
-                        0,
+                        -15.153,
+                        -0.833,
+                        -45.35,
                         1
                     ]
                 }
