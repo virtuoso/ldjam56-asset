@@ -135,6 +135,7 @@
             "name": "puzzle 2",
             "gltf": "medium_puzzle2.0.gltf",
             "terrain_clamp": false,
+            "fix_origin": true,
             "physics": {
                 "mass": 2,
                 "geom": "trimesh",
@@ -143,9 +144,9 @@
             "entity": [
                 {
                     "position": [
-                        0,
-                        0,
-                        0,
+                        40.6,
+                        5.79,
+                        -75.0,
                         1
                     ]
                 }
@@ -155,6 +156,7 @@
             "name": "boulders at gate",
             "gltf": "boulders_at_gate.gltf",
             "terrain_clamp": false,
+            "fix_origin": true,
             "physics": {
                 "mass": 2,
                 "geom": "trimesh",
@@ -168,9 +170,10 @@
                 {
                     "position": [
                         0,
-                        0,
-                        0,
-                        1
+                        -3.72,
+                        58.07,
+                        1,
+                        8.06
                     ],
 		    "bloom_intensity": -0.3
                 }
@@ -221,6 +224,7 @@
             "gltf": "volcano1.0.gltf",
             "terrain_clamp": false,
             "outline_exclude": true,
+            "fix_origin": false,
             "entity": [
                 {
                     "position": [
@@ -255,7 +259,8 @@
         {
             "name": "red trees",
             "gltf": "red_trees1.gltf",
-            "terrain_clamp": false,
+            "terrain_clamp": true,
+            "fix_origin": true,
             "physics": {
                 "mass": 2,
                 "geom": "trimesh",
@@ -264,9 +269,9 @@
             "entity": [
                 {
                     "position": [
-                        0,
-                        0,
-                        0,
+                        -35.0,
+                        0.0,
+                        -13.0,
                         1
                     ],
 		    "bloom_intensity": -0.12
@@ -276,7 +281,8 @@
         {
             "name": "red trees",
             "gltf": "red_trees2.gltf",
-            "terrain_clamp": false,
+            "terrain_clamp": true,
+            "fix_origin": true,
             "physics": {
                 "mass": 2,
                 "geom": "trimesh",
@@ -285,9 +291,9 @@
             "entity": [
                 {
                     "position": [
-                        0,
-                        0,
-                        0,
+                        32.0,
+                        0.0,
+                        -37.0,
                         1
                     ],
 		    "bloom_intensity": -0.12
@@ -297,7 +303,8 @@
         {
             "name": "red trees",
             "gltf": "red_trees3.gltf",
-            "terrain_clamp": false,
+            "terrain_clamp": true,
+            "fix_origin": true,
             "physics": {
                 "mass": 2,
                 "geom": "trimesh",
@@ -306,9 +313,9 @@
             "entity": [
                 {
                     "position": [
+                        12.5,
                         0,
-                        0,
-                        0,
+                        46.4,
                         1
                     ],
 		    "bloom_intensity": -0.12
@@ -396,6 +403,7 @@
             "name": "god",
             "gltf": "char_player_god_animated6.0.gltf",
             "terrain_clamp": true,
+            "fix_origin": false,
             "physics": {
                 "mass": 2,
                 "geom": "capsule",
@@ -456,14 +464,14 @@
                 "type": "geom",
                 "yoffset": -0.2
             },
-            "terrain_clamp": true,
             "entity": [
                 {
                     "position": [
-                        0.18,
-                        10,
-                        -6.36,
-                        1
+                        -4.7,
+                        -1.1,
+                        -15.22,
+                        1,
+                        30.0
                     ]
                 }
             ]
